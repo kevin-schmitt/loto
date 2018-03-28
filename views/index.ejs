@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/loto.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="Simple loto game with nodejs">
+    <title>Loto</title>
+  </head>
+  <body>
+    <main>
+      <section>
+          <%for (var result in Numbers){%>
+              <span class="loto"><%=Numbers[result]%></span>
+          <%}%>
+      </section>
+    </main>
+  </body>
+</html>

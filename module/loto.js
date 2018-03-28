@@ -1,5 +1,6 @@
 const readline = require('readline');
 const rand = require('random');
+//const server = require('server.js');
 
 module.exports = {
 	//  vérifie si on a gagné
@@ -19,7 +20,27 @@ module.exports = {
 		if(game.length <= i)
 		{
 			(nb > 2) ? console.log("Vous avez " + nb + " bons numéros") : console.log("Game over!");
+		//	server.displayView();
 		}
+
+	},
+
+	getNumbers: function()
+	{
+		let limit = 7;
+		let numbersForWin = new Array();
+
+		// on génère nos nombres
+		for(var end = 0;end < limit;end++)
+		{
+			nbRand = parseInt(Math.random()*48+1);
+			if (nbRand < 50)
+			{
+				numbersForWin.push(nbRand);
+			}
+		}
+
+		if(end === limit) return numbersForWin;
 
 	},
 
@@ -48,6 +69,7 @@ module.exports = {
 	// fonction principale
 	game: function(numberList)
 	{
-		this.numbersGame(numberList);
+		//this.numbersGame(numberList);
+		this.getNumbers();
 	}
 }

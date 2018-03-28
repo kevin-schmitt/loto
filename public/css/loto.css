@@ -1,0 +1,17 @@
+.loto {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #DF001A;
+  background-image: radial-gradient(#fff 36%, transparent 0), radial-gradient(#fff 36%, transparent 0);
+  background-size: 100% 100%, 50% 100%;
+  border: 1px solid;
+  display: inline-block;
+  background-position: 0 0, 50% 0;
+  line-height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
