@@ -9,11 +9,20 @@
   </head>
   <body>
     <main>
-      <section>
-          <%for (let result in Numbers){%>
-              <span class="loto"><%=Numbers[result]%></span>
-          <%}%>
-      </section>
+	  <section>
+		<form action="getResults" method="post">
+			<!-- <textarea rows="1" cols="20" placeholder="enter numbers with comma like 25,3"></textarea> -->
+			<input type="submit" value="Generate" class="buttonLoto loto">
+		</form>
+	  </section>
+
+	  <%if (displayNumbers) { %>
+		  <section>
+			  <%for (let result in Numbers){%>
+				  <span class="loto"><%=Numbers[result]%></span>
+			  <%}%>
+		  </section>
+	  <% } %>
     </main>
   </body>
 </html>

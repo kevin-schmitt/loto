@@ -15,3 +15,28 @@
   overflow: hidden;
   position: relative;
 }
+
+.buttonLoto{
+  position:relative;
+  letter-spacing: 5px;
+  font-size: 1em;
+  line-height: 45px;
+  width: 10%;
+  color: blue;
+  background-image: radial-gradient(#fff 36%, transparent 0), radial-gradient(#fff 36%, transparent 0);
+  background-color: #ADD8E6;
+}
+.buttonLoto:hover{
+    background-color: blue;
+	color:grey;
+}
+body
+{
+	background: lightgrey;
+}
+
+main
+{
+	text-align: center;
+	margin-top: 20%;
+}
